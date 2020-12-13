@@ -1,8 +1,11 @@
 package main
 
-import "crawler/parse"
+import thy "github.com/wozaifeiyang0/thylog"
 
 func main() {
 
-	parse.Region("http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/2019/13/01/130101.html  " , "./test/towns.csv", ".towntable .towntr", 9, 12)
+	thy.SetLogFile("./data", "error.log")
+
+	thy.Error.Println("aaaaaaaaaaa")
+
 }
